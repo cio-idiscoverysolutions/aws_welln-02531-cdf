@@ -3,7 +3,7 @@ view: i_ds_vw_communications {
 
   dimension: conversationId {
     type: number
-    sql: ${TABLE}.ConversationId ;;
+    sql: ${TABLE}.IDS_ConversationId ;;
   }
 
   dimension_group: date {
