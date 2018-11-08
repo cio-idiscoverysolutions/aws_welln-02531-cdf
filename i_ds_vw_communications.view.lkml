@@ -60,6 +60,10 @@ view: i_ds_vw_communications {
     sql: ${TABLE}."IDS_ConversationID" ;;
   }
 
+  dimension: IDS_DeviceName {
+    type: string
+    sql: ${TABLE}."IDS_DeviceName" ;;
+  }
   measure: count {
     type: count
     drill_fields: []
