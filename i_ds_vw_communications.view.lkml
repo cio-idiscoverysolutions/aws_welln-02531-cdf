@@ -65,6 +65,17 @@ view: i_ds_vw_communications {
     sql: ${TABLE}."IDS_ConversationID" ;;
   }
 
+  dimension: iDS_ConversationType {
+    type: string
+    sql: ${TABLE}."iDS_ConversationType" ;;
+  }
+
+  dimension: Report_Name {
+    type: string
+    sql: concat(${TABLE}.IDS_SourceFile, ${TABLE}."IDS_DeviceName");;
+  }
+
+
   dimension: IDS_DeviceName {
     type: string
     sql: ${TABLE}."IDS_DeviceName" ;;
