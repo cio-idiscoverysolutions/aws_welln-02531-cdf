@@ -55,6 +55,11 @@ view: i_ds_vw_communications {
     sql: ${TABLE}."To" ;;
   }
 
+  dimension: ids_ConversationID {
+    type: string
+    sql: ${TABLE}."IDS_ConversationID" ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
