@@ -72,7 +72,7 @@ view: i_ds_vw_communications {
 
   dimension: Report_Name {
     type: string
-    sql: concat(${TABLE}.IDS_SourceFile," - ", ${TABLE}."IDS_DeviceName");;
+    sql: concat(${TABLE}.IDS_SourceFile,' - ', ${TABLE}."IDS_DeviceName");;
   }
 
 
