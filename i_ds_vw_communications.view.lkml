@@ -1,6 +1,11 @@
 view: i_ds_vw_communications {
   sql_table_name: dbo.iDS_vw_Communications ;;
 
+  dimension: conversationId {
+    type: number
+    sql: ${TABLE}.IDS_ConversationId ;;
+  }
+
   dimension_group: date {
     type: time
     timeframes: [
