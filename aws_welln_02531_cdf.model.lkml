@@ -12,6 +12,7 @@ persist_with: aws_welln_02531_cdf_default_datagroup
 
 explore: i_ds_vw_communications {}
 
+explore: i_ds_vw_communications_timeline {}
 # - explore: cdf_att_call_logs_master
 
 # - explore: cdf_blacklight_report_master
